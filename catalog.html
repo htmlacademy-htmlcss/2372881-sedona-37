@@ -10,7 +10,8 @@
         <ul class="navigation-list">
           <li>
             <a href="index.html">
-            <img class="navigation-item" src="#">
+            <img class="navigation-item" src="#" alt="sedona logo">
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">
@@ -55,31 +56,75 @@
     </header>
     <main>
       <h1 class="catalog-header">Гостницы Седоны</h1>
-      <section class="filters">
         <div class="breadcrumbs">
         <a href="index.html">
-          <img src="#">
+          <img src="#" alt="home page">
         </a>
         <span>Гостиницы</span>
+        </div>
+      <section class="filters">
+        <h2 class="visualy-hidden">Фильтры</h2>
+        <fieldset>
+          <legend>Инфраструтура</legend>
+          <div>
+            <input type="checkbox" name="pool" id="pool" checked>
+            <label for="pool">Басейн</label>
+          </div>
+          <div>
+            <input type="checkbox" name="parking" id="parking" checked>
+            <label for="parking">Парковка</label>
+          </div>
+          <div>
+            <input type="checkbox" name="wi-fi" id="wi-fi">
+            <label for="wi-fi">Wi-Fi</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Тип Жилья</legend>
+          <div>
+            <input type="radio" id="hot" name="hotel-type" value="hotel" checked>
+            <label for="hot">Гостиница</label>
+          </div>
+          <div>
+            <input type="radio" id="mot" name="hotel-type" value="motel">
+            <label for="mot">Мотель</label>
+          </div>
+          <div>
+            <input type="radio" id="apart" name="hotel-type" value="apartment">
+            <label for="apart">Апартаменты</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Стоиость,<span>&#8381</span>:</legend>
+            <input type="number" id="min-price" min="0" max="15000" value="0" placeholder="от">
+            <label for="min-price"></label>
+            <input type="number" id="min-price" min="0" max="15000" value="9000" placeholder="до">
+            <label for="max-price"></label>
+          <input type="range" id="pirce" name="price" min="0" max="15000" value="9000" step="100">
+          <label for="price"></label>
+        </fieldset>
       </section>
     </main>
     <footer>
       <ul class="main-footer-social-list">
         <li>
           <a href="#">
-          <img class="main-footer-social-item" src="#">
+          <img class="main-footer-social-item" src="#" alt="VK">
+          </a>
         </li>
         <li>
           <a href="#">
-          <img class="main-footer-social-item" src="#">
+          <img class="main-footer-social-item" src="#" alt="telegram">
+          </a>
         </li><li>
           <a href="#">
-          <img class="main-footer-social-item" src="#">
+          <img class="main-footer-social-item" src="#" alt="youtube">
+          </a>
         </li>
       </ul>
       <a href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru/">
-        <img src="#"><!--html.academy logo-->
+        <img src="#" alt="html academy logo"><!--html.academy logo-->
       </a>
     </footer>
   </body>
